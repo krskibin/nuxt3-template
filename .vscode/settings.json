@@ -1,9 +1,0 @@
-{
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "cSpell.words": [
-    "nuxtjs"
-  ]
-}

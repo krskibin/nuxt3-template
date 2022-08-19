@@ -1,23 +1,42 @@
-# Nuxt3 template
-> Template for Nuxt3 projects with typescript eslint + prettier and git hooks
+# Nuxt 3 Minimal Starter
 
-## Project details
-Template repository for Nuxt3 (Vue3) + Typescript projects
+Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-## Project setup
+## Setup
+
+Make sure to install the dependencies:
+
 ```bash
-# Install all dependencies
-$ yarn
+# yarn
+yarn install
 
-# To start dev server
-$ yarn dev
+# npm
+npm install
+
+# pnpm
+pnpm install --shamefully-hoist
 ```
 
-## Project building
-```bash
-# Build project and all dependencies
-$ yarn build
+## Development Server
 
-# Run builded project
-$ yarn start
+Start the development server on http://localhost:3000
+
+```bash
+npm run dev
 ```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
