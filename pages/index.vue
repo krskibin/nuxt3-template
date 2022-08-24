@@ -6,7 +6,10 @@
 </template>
 
 <script lang="ts" setup>
-const value = ref('');
+import { Ref } from 'vue';
+
+type Value = string;
+const value: Ref<Value> = ref('');
 </script>
 
 <style lang="scss" scoped>
