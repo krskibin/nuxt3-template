@@ -1,22 +1,24 @@
 <template>
-  <div>
-    <NuxtWelcome />
-    <div class="test-value">{{ value }}</div>
+  <div class="hello-scss">
+    <div class="hello-scss__element text-2xl">
+      Hello World, {{ value }}!
+    </div>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { Ref } from 'vue';
 
+// Typescript ESLint check;
 type Value = string;
-const value: Ref<Value> = ref('');
+const value: Ref<Value> = ref('Hello Nuxt3');
 </script>
 
 <style lang="scss" scoped>
-.test-value {
-  cursor: pointer;
-  &:hover {
-    color: green;
+.hello-scss {
+  &__element {
+    @apply hover:text-green-400;
+    @apply hover:cursor-pointer;
   }
 }
 </style>

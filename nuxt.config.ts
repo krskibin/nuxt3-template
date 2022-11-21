@@ -1,9 +1,23 @@
-import { defineNuxtConfig } from 'nuxt'
-import eslintPlugin from 'vite-plugin-eslint'
-
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  vite: {
-    plugins: [eslintPlugin()]
-  }
+  app: {
+    head: {
+      title: 'Nuxt3 Template',
+      htmlAttrs: {
+        lang: 'en'
+      },
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
+      noscript: [
+        { children: 'Javascript is required' }
+      ]
+    }
+  },
+  modules: [
+    '@nuxtjs/html-validator',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/robots',
+    '@nuxt/image-edge',
+  ]
 })
